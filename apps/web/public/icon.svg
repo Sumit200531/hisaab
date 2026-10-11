@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#a3201b"/>
+  <rect x="96" y="80" width="320" height="352" rx="20" fill="#fff4d6"/>
+  <path d="M150 80v352M162 80v352" stroke="#d9654f" stroke-width="6"/>
+  <path d="M190 170h190M190 230h190M190 290h190M190 350h190" stroke="#e9cfa4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M376 80h44v120l-22-18-22 18z" fill="#e8a317"/>
+  <text x="270" y="318" text-anchor="middle" font-family="'Tiro Devanagari Hindi','Noto Serif Devanagari',serif" font-size="190" fill="#1f2a44">₹</text>
+</svg>

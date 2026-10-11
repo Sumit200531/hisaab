@@ -1,0 +1,28 @@
+{
+  "name": "hisaab",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Offline-first udhaar khata (credit ledger) for small Indian businesses: Hindi/English, WhatsApp reminders, UPI payments, end-to-end encrypted sync.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @hisaab/web",
+    "dev:server": "npm run dev -w @hisaab/server",
+    "build": "npm run build -w @hisaab/web && npm run build -w @hisaab/server",
+    "test": "npm test -w @hisaab/core && npm test -w @hisaab/server",
+    "test:core": "npm test -w @hisaab/core",
+    "test:server": "npm test -w @hisaab/server",
+    "test:e2e": "playwright test",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "build:demo": "npm run build:single -w @hisaab/web"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  }
+}

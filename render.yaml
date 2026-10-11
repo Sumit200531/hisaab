@@ -1,0 +1,17 @@
+# One-click deploy of the sync relay on Render (free plan). Set DATABASE_URL to a
+# free Neon or Supabase Postgres, or leave it empty to run in memory for a trial.
+services:
+  - type: web
+    name: hisaab-relay
+    runtime: docker
+    dockerfilePath: apps/server/Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: CORS_ORIGIN
+        value: https://sumit200531.github.io
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "120"
